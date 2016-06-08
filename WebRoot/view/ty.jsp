@@ -74,7 +74,7 @@
 					<table border="0" height="100%" width="100%"
 						style="font-size: 30px;text-align: center;">
 						<tr>
-							<td>4月份是献身月</td>
+							<td>6月份是为国家祷告月</td>
 						</tr>
 						<tr>
 							<td>每天过属灵信仰生活（读圣经、祷告、赞美）</td>
