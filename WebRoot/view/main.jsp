@@ -63,7 +63,7 @@
 			</tr>
 			<tr>
 				<td colspan="7" style="text-align: center;height: 50px;"><span
-					style="font-size: 50px;color: #000;border: 2px;background-color: #632443;width: 100%;border-radius:10px;border-color: #000;">告&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;知</span></td>
+					style="font-size: 50px;color: #fff;border: 2px;background-color: #632443;width: 100%;border-radius:10px;border-color: #fff;">告&nbsp;&nbsp;&nbsp;&nbsp;知</span></td>
 			</tr>
 			<tr>
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>
@@ -91,7 +91,7 @@
 			</tr>
 			<tr>
 				<td colspan="7" style="text-align: center;height: 50px;"><span
-					style="font-size: 50px;color: #000;border: 2px;background-color: #632443;width: 100%;border-radius:10px;border-color: #000;">资源下载</span></td>
+					style="font-size: 50px;color: #fff;border: 2px;background-color: #632443;width: 100%;border-radius:10px;border-color: #fff;">资源下载</span></td>
 			</tr>
 			<tr>
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>
@@ -140,23 +140,23 @@
 					<table border="0" height="100%" width="100%"
 						style="text-align: center;">
 						<tr>
-							<td><a href="http://ys-m.ys168.com/8.0/559426855/VFgKjKp7L35656S38PHG/mx2.flv"><img
+							<td><a href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fmx2.flv"><img
 									alt="mx2" src="${img}/1.gif" style="border-radius:10px;"></a></td>
 							<td><a
-								href="http://ys-m.ys168.com/8.0/559426832/i7L35656S3QJIUHjFgN/mx3GY.flv"><img
+								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fmx3YJ.avi"><img
 									alt="MX3硬件" src="${img}/3.gif" style="border-radius:10px;"></a></td>
 							<td><a
-								href="http://ys-m.ys168.com/8.0/559426832/i7L35656S3QJIUHjFgN/mx3GY.flv"><img
+								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fmx3GY.flv"><img
 									alt="MX3工艺" src="${img}/2.gif" style="border-radius:10px;"></a></td>
 							<td><a
-								href="http://ys-k.ys168.com/8.0/559426842/i7L35656S37PLHTJfGkM/zainibaozuoqian.flv"><img
+								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fzainibaozuoqian.flv"><img
 									alt="见证" src="${img}/4.jpg" style="border-radius:10px;"></a></td>
 							<td><img alt="见证" src="${img}/5.jpg"
 								style="border-radius:10px;"></td>
 						</tr>
 						<tr>
 							<td>mx2</td>
-							<td>MX3工艺</td>
+							<td>MX3硬件</td>
 							<td>MX3工艺</td>
 							<td>在你宝座前</td>
 							<td>说明5</td>
