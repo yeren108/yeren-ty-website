@@ -59,7 +59,7 @@
 
 			<tr>
 				<td colspan="7" style="text-align: center;height: 400px"><img
-					alt="见证" src="${logo}/113.png"></td>
+					alt="见证" src="${logo}/holy-bible-bg.png"></td>
 			</tr>
 			<tr>
 				<td colspan="7" style="text-align: center;height: 50px;"><span
