@@ -19,9 +19,6 @@
 <meta http-equiv="expires" content="0">
 <meta http-equiv="keywords" content="庇哩亚教会,庇哩亚,天意,天意庇哩亚教会,教会">
 <meta http-equiv="description" content="This is my page">
-<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
 <link rel="shortcut icon" href="TyWebsitelogo/ty.ico" type="image/x-icon" /> 
 </head>
 

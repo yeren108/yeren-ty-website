@@ -7,7 +7,7 @@
 
 	<display-name>欢迎来到天意庇哩亚</display-name>
 	<welcome-file-list>
-		<welcome-file>view/ty.jsp</welcome-file>
+		<welcome-file>view/main.jsp</welcome-file>
 	</welcome-file-list>
 
 	<error-page>

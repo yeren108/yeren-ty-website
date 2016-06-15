@@ -22,7 +22,7 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<link rel="shortcut icon" href="TyWebsite/logo/ty.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="${logo}/ty.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -37,19 +37,19 @@
 				<td colspan="7">
 					<table align="center" border="0" width="100%">
 						<tr align="center">
-							<td><a href="view/zhurijiangdao.jsp"><img alt="见证"
+							<td><a href="view/ZR.jsp"><img alt="见证"
 									src="${logo}/zr.png"></a></td>
-							<td><a href="view/zhuantijiangdao.jsp"><img alt="见证"
+							<td><a href="view/ZT.jsp"><img alt="见证"
 									src="${logo}/zt.png"></a></td>
-							<td><a href="view/jianzhengruyun.jsp"><img alt="见证"
+							<td><a href="view/JZ.jsp"><img alt="见证"
 									src="${logo}/jz.png"></a></td>
-							<td><a href="view/shipinxiazai.jsp"><img alt="见证"
+							<td><a href="view/SP.jsp"><img alt="见证"
 									src="${logo}/sp.png"></a></td>
-							<td><a href="view/xuexiyuandi.jsp"><img alt="见证"
+							<td><a href="view/XX.jsp"><img alt="见证"
 									src="${logo}/xx.png"></a></td>
-							<td><a href="view/shujixiazai.jsp"><img alt="见证"
+							<td><a href="view/SJ.jsp"><img alt="见证"
 									src="${logo}/sj.png"></a></td>
-							<td><a href="view/lianxiwomen.jsp"><img alt="见证"
+							<td><a href="view/LX.jsp"><img alt="见证"
 									src="${logo}/lx.png"></a></td>
 						</tr>
 					</table>
