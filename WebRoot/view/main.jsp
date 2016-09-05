@@ -23,6 +23,12 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 <link rel="shortcut icon" href="${logo}/ty.ico" type="image/x-icon" />
+<link href="${pageContext.request.contextPath}/static/bootstrap-3.3.5-dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<script src="${pageContext.request.contextPath}/static/jQuery/jquery-3.0.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/jQuery/confirm.js"></script>
 </head>
 
 <body>
@@ -71,20 +77,8 @@
 			<tr>
 
 				<td colspan="7" style="height: 300px;width: 45%;" align="center">
-					<table border="0" height="100%" width="100%"
-						style="font-size: 30px;text-align: center;">
-						<tr>
-							<td>6月份是为国家祷告月</td>
-						</tr>
-						<tr>
-							<td>每天过属灵信仰生活（读圣经、祷告、赞美）</td>
-						</tr>
-						<tr>
-							<td>今年的教会的口号是我灵魂啊你要祷告</td>
-						</tr>
-						<tr>
-							<td>认识真理是智慧的开端</td>
-						</tr>
+					<table id="gaozhi" border="0" height="100%" width="100%" style="font-size: 30px;text-align: center;">
+						
 					</table>
 				</td>
 
@@ -99,41 +93,14 @@
 			<tr>
 
 				<td>
-					<table border="0" height="100%" width="100%"
-						style="text-align: center;font-size: 20px">
+					<table border="0" height="100%" width="100%" style="text-align: center;font-size: 20px">
 						<tr>
-							<td>推荐诗歌</td>
+							<td>推荐歌曲</td>
 						</tr>
-						<tr>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fmusic%2f%b7%b2%ca%c7%b6%bc%c4%dc%d7%f6.mp3"
-								target="_blank">凡是都能做</a></td>
-						</tr>
-						<tr>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fmusic%2f%c2%fa%d3%d0%c4%dc%c1%a6.mp3"
-								target="_blank">满有能力</a></td>
-						</tr>
-						<tr>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fmusic%2f%ce%d2%d2%d4%b5%bb%b8%e6%c0%b4%b5%bd%c4%e3%c3%e6%c7%b0.mp3"
-								target="_blank">我以祷告来到你跟前</a></td>
-						</tr>
-						<tr>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fmusic%2f%d7%ee%d6%aa%d0%c4%b5%c4%c5%f3%d3%d1_%ce%d2%d0%c4%d0%fd%c2%c9.mp3"
-								target="_blank">最知心的朋友</a></td>
-						</tr>
-						<tr>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fmusic%2f%d3%d0%d2%bb%ce%bb%c9%f1.mp3"
-								target="_blank">有一位神</a></td>
-						</tr>
-						<tr>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fmusic%2f%d5%e2%d2%bb%c9%fa%d7%ee%c3%c0%b5%c4%d7%a3%b8%a3.mp3"
-								target="_blank">这一生最美的祝福</a></td>
-						</tr>
+					</table>
+					<table id="tujiangequ" border="0" height="100%" width="100%" style="text-align: center;font-size: 20px">
+						
+						
 					</table>
 				</td>
 				<td colspan="5" style="height: 300px">
@@ -159,7 +126,7 @@
 							<td>MX3硬件</td>
 							<td>MX3工艺</td>
 							<td>在你宝座前</td>
-							<td>说明5</td>
+							<td id="">说明5</td>
 						</tr>
 						<tr>
 							<td><img alt="见证" src="${img}/6.jpg"
@@ -183,30 +150,14 @@
 					</table>
 				</td>
 				<td>
-					<table border="0" height="100%" width="100%"
-						style="text-align: center;font-size: 20px">
+					<table border="0" height="100%" width="100%" style="text-align: center;font-size: 20px">
 						<tr>
 							<td>推荐讲道</td>
 						</tr>
-						<tr>
-							<td><a href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2faudio%2f%D6%F7%D2%AE%F6%D5%B5%C4%B5%BB%B8%E6.mp3"
-								target="_blank">主耶稣的祷告</a></td>
-						</tr>
-						<tr>
-							<td>暂无</td>
-						</tr>
-						<tr>
-							<td>暂无</td>
-						</tr>
-						<tr>
-							<td>暂无</td>
-						</tr>
-						<tr>
-							<td>暂无</td>
-						</tr>
-						<tr>
-							<td>暂无</td>
-						</tr>
+					</table>
+					<table id="tujianjiangdao" border="0" height="100%" width="100%" style="text-align: center;font-size: 20px">
+						
+						
 					</table>
 				</td>
 
@@ -217,3 +168,109 @@
 	<jsp:include page="/view/muban/tail.jsp" flush="true" />
 </body>
 </html>
+<script type="text/javascript">
+
+	//初始化页面
+	$(function(){
+		showLink(11,4,"#tujiangequ");
+		showLink(3,4,"#tujianjiangdao");
+		gaozhi(10,5,"#gaozhi");
+		appendArticle();
+	});
+	
+	
+	function showLink(categoryId,n,where){
+		$.getJSON("http://192.168.1.105:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+			for(var i=0;i<data.length;i++){
+				appendLink(data[i].name,data[i].url,where);
+			}
+		});
+	}
+	
+	function appendLink(name,url,where){
+		var tr=
+			"<tr>"+
+				"<td>"+
+					"<a href='"+url+"' target='_blank'>"+name+"</a>"+
+				"<td>"+
+			"</tr>";
+		$(where).append(tr);
+	}
+	
+	function gaozhi(categoryId,n,where){
+		$.getJSON("http://192.168.1.105:9090/yeren-cms/choose/article?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+			for(var i=0;i<data.length;i++){
+				if(i==2){
+					appendArticleWithPicture(data[i].id,data[i].name,where);
+				}else{
+					appendArticle(data[i].id,data[i].name,where);
+				}
+			}
+		});
+	}
+	
+	function appendArticle(id,name,where){
+		var tr=
+			"<tr>"+
+				"<td>"+
+					"<a href='javascript:aaa("+id+");' target='_blank'>"+name+"</a>"+
+				"<td>"+
+			"</tr>";
+		$(where).append(tr);
+	}
+	
+	function appendArticleWithPicture(id,name,where){
+		aaa(id);
+		var tr0=
+			"<tr>"+
+				"<td>"+
+					name
+				"<td>"+
+			"</tr>";
+			
+		var tr1=
+			"<tr>"+
+				"<td>"+
+					sessionStorage.getItem("what");
+				"<td>"+
+			"</tr>";
+		
+		var tr2=
+			"<tr>"+
+				"<td>"+
+					"<img  src='"+sessionStorage.getItem("img")+"' style='border-radius:10px;'>"+
+				"<td>"+
+			"</tr>";		
+		$(where).append(tr0);
+		$(where).append(tr1);
+		$(where).append(tr2);
+	}
+	
+	function aaa(articleId){
+		$.getJSON("http://192.168.1.105:9090/yeren-cms/choose/articleMore?articleId="+articleId+"&jsonpCallback=?",function(data){ 
+			sessionStorage.removeItem("what");
+			sessionStorage.setItem("what", data[0][0].data);
+			sessionStorage.removeItem("img");
+			sessionStorage.setItem("img", data[1][0].url);
+
+				/* window.location.href="http://"+data[1][0].url+""; */
+				/* alert(data[0][0].data);
+				alert(data[1][0].url); */
+		});
+	}
+	
+	
+	
+	/* 备用格式 */
+	/*
+		function ABC(){
+		$.getJSON("http://192.168.1.105:9090/yeren-cms/choose/article?jsonpCallback=?",{categoryId:10,n:5},function(data){ 
+			for(var i=0;i<data.length;i++){
+				showXYZ(data[i].name);
+			}
+		});
+	}
+	*/
+	
+	
+</script>
