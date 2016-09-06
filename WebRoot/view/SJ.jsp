@@ -80,7 +80,7 @@
 	
 	
 	function showLink(categoryId,n,line1,line2,line3,line4){
-		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+		$.getJSON("http://yeren108.duapp.com/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
 			for(var i=0;i<data.length;i++){
 				if(i<5){
 					appendLink(data[i].name,data[i].url,line1);

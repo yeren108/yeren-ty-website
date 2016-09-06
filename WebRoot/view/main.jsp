@@ -146,7 +146,7 @@
 	
 	
 	function showLink_picture4(categoryId,n,line1,line2){
-		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+		$.getJSON("http://yeren108.duapp.com/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
 			for(var i=0;i<data.length;i++){
 				if(i<2){
 					if(i==0){
@@ -181,7 +181,7 @@
 	}
 	
 	function showLink(categoryId,n,where){
-		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+		$.getJSON("http://yeren108.duapp.com/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
 			for(var i=0;i<data.length;i++){
 				appendLink(data[i].name,data[i].url,where);
 			}
@@ -199,7 +199,7 @@
 	}
 	
 	function gaozhi(categoryId,n,where){
-		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/article?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+		$.getJSON("http://yeren108.duapp.com/yeren-cms/choose/article?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
 			for(var i=0;i<data.length;i++){
 				if(i==2){
 					//appendArticleWithPicture(data[i].id,data[i].name,where);
@@ -248,7 +248,7 @@
 	}
 	
 	function aaa(articleId){
-		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/articleMore?articleId="+articleId+"&jsonpCallback=?",function(data){ 
+		$.getJSON("http://yeren108.duapp.com/yeren-cms/choose/articleMore?articleId="+articleId+"&jsonpCallback=?",function(data){ 
 			sessionStorage.removeItem("what");
 			sessionStorage.setItem("what", data[0][0].data);
 			sessionStorage.removeItem("img");
@@ -264,7 +264,7 @@
 	/* 备用格式 */
 	/*
 		function ABC(){
-		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/article?jsonpCallback=?",{categoryId:10,n:5},function(data){ 
+		$.getJSON("http://yeren108.duapp.com/yeren-cms/choose/article?jsonpCallback=?",{categoryId:10,n:5},function(data){ 
 			for(var i=0;i<data.length;i++){
 				showXYZ(data[i].name);
 			}
