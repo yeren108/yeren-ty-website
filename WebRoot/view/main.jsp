@@ -92,10 +92,10 @@
 			</tr>
 			<tr>
 
-				<td style="width: 30%;">
-					<table border="0" height="100%" width="100%" style="text-align: right;font-size: 40px">
+				<td style="width: 35%;">
+					<table border="0" height="100%" width="100%" style="text-align: right;font-size: 40px;">
 						<tr>
-							<td>推荐歌曲</td>
+							<td style="padding:10px;">推荐歌曲</td>
 						</tr>
 					</table>
 					<table id="tujiangequ" border="0" height="100%" width="100%" style="text-align: right;font-size: 28px;">
@@ -104,39 +104,20 @@
 					</table>
 				</td>
 				<td colspan="5" style="height: 300px;width: 30%;">
-					<table border="0" height="100%" width="100%"
-						style="text-align: center;">
-						<tr>
-							<td><a href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fmx2.flv"><img
-									alt="mx2" src="${img}/1.gif" style="border-radius:10px;"></a></td>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fmx3YJ.avi"><img
-									alt="MX3硬件" src="${img}/3.gif" style="border-radius:10px;"></a></td>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fmx3GY.flv"><img
-									alt="MX3工艺" src="${img}/2.gif" style="border-radius:10px;"></a></td>
+					<div>
+					<table border="0" height="100%" width="100%" style="text-align: center;">
+						<tr id="line1">
+							
 						</tr>
-						<tr>
-							<td>mx2</td>
-							<td>MX3硬件</td>
-							<td>MX3工艺</td>
-						</tr>
-						<tr>
-							<td><img alt="见证" src="${img}/6.jpg" style="border-radius:10px;"></td>
-							<td><img alt="见证" src="${img}/7.gif" style="border-radius:10px;"></td>
-							<td><img alt="见证" src="${img}/8.jpg" style="border-radius:10px;"></td>
-						</tr>
-						<tr>
-							<td>说明6</td>
-							<td>说明7</td>
-							<td>说明8</td>
+						<tr id="line2">
+							
 						</tr>
 					</table>
 				</td>
-				<td style="width: 30%;">
-					<table border="0" height="100%" width="100%" style="text-align: left;font-size: 40px">
+				<td style="width: 35%;">
+					<table border="0" height="100%" width="100%" style="text-align: left;font-size: 40px;">
 						<tr>
-							<td>推荐讲道</td>
+							<td style="padding:10px;">推荐讲道</td>
 						</tr>
 					</table>
 					<table id="tujianjiangdao" border="0" height="100%" width="100%" style="text-align: left;font-size: 28px">
@@ -159,9 +140,45 @@
 		showLink(24,5,"#tujiangequ");
 		showLink(23,5,"#tujianjiangdao");
 		gaozhi(10,5,"#gaozhi");
+		showLink_picture4(11,4,"#line1","#line2");
 		appendArticle();
 	});
 	
+	
+	function showLink_picture4(categoryId,n,line1,line2){
+		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+			for(var i=0;i<data.length;i++){
+				if(i<2){
+					if(i==0){
+						appendLink_picture4(data[i].name,data[i].url,line1,"2.gif");
+					}
+					if(i==1){
+						appendLink_picture4(data[i].name,data[i].url,line1,"1.gif");
+					}
+				}else if(i<4){
+					if(i==2){
+						appendLink_picture4(data[i].name,data[i].url,line2,"7.gif");
+					}
+					if(i==3){
+						appendLink_picture4(data[i].name,data[i].url,line2,"3.gif");
+					}
+				}
+			}
+		});
+	}
+	
+	function appendLink_picture4(name,url,where,url_pic){
+		var td=
+			"<td width='20%'  style='text-align: center;'>"+
+				"<div>"+
+					"<a href='http://"+url+"' target='_blank' style='text-align: center;'><img src='${img}/"+url_pic+"' style='border-radius:10px;'></a>"+
+				"</div>"+
+				"<div>"+
+					name+
+				"</div>"+
+			"</td>";
+		$(where).append(td);
+	}
 	
 	function showLink(categoryId,n,where){
 		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
@@ -174,8 +191,8 @@
 	function appendLink(name,url,where){
 		var tr=
 			"<tr>"+
-				"<td>"+
-					"<a href='"+url+"' target='_blank' style='background-color: #F0F9F0'>"+name+"</a>"+
+				"<td style='padding:10px;'>"+
+					"<a href='"+url+"' target='_blank' >"+name+"</a>"+
 				"<td>"+
 			"</tr>";
 		$(where).append(tr);
@@ -185,7 +202,8 @@
 		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/article?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
 			for(var i=0;i<data.length;i++){
 				if(i==2){
-					appendArticleWithPicture(data[i].id,data[i].name,where);
+					//appendArticleWithPicture(data[i].id,data[i].name,where);
+					appendArticle(data[i].id,data[i].name,where);
 				}else{
 					appendArticle(data[i].id,data[i].name,where);
 				}
@@ -197,14 +215,13 @@
 		var tr=
 			"<tr>"+
 				"<td>"+
-					"<a href='javascript:aaa("+id+");' target='_blank'>"+name+"</a>"+
+					"<a href='javascript:aaa("+id+");'>"+name+"</a>"+
 				"<td>"+
 			"</tr>";
 		$(where).append(tr);
 	}
 	
 	function appendArticleWithPicture(id,name,where){
-		aaa(id);
 		var tr0=
 			"<tr>"+
 				"<td>"+
@@ -236,10 +253,9 @@
 			sessionStorage.setItem("what", data[0][0].data);
 			sessionStorage.removeItem("img");
 			sessionStorage.setItem("img", data[1][0].url);
-
-				/* window.location.href="http://"+data[1][0].url+""; */
-				/* alert(data[0][0].data);
-				alert(data[1][0].url); */
+			var item=sessionStorage.getItem('what', data[0][0].data);
+			var item_ok="<font size='40px' style='padding:40px;'>"+item+"</font>";
+			Confirm.show('详细内容',item_ok);
 		});
 	}
 	
