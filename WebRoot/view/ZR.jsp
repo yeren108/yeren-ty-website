@@ -97,7 +97,7 @@
 		var td=
 				"<td width='20%'  style='text-align: center;'>"+
 					"<div>"+
-						"<a href='http://"+url+"' target='_blank' style='text-align: center;'><img alt='见证' src='${logo}/yinpin.png'></a>"+
+						"<a href='"+url+"' target='_blank' style='text-align: center;'><img alt='见证' src='${logo}/yinpin.png'></a>"+
 					"</div>"+
 					"<div>"+
 						name+

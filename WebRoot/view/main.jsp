@@ -171,7 +171,7 @@
 		var td=
 			"<td width='20%'  style='text-align: center;'>"+
 				"<div>"+
-					"<a href='http://"+url+"' target='_blank' style='text-align: center;'><img src='${img}/"+url_pic+"' style='border-radius:10px;'></a>"+
+					"<a href='"+url+"' target='_blank' style='text-align: center;'><img src='${img}/"+url_pic+"' style='border-radius:10px;'></a>"+
 				"</div>"+
 				"<div>"+
 					name+
