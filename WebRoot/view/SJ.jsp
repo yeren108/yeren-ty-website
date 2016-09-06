@@ -23,6 +23,13 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 <link rel="shortcut icon" href="${logo}/ty.ico" type="image/x-icon" /> 
+<link href="${pageContext.request.contextPath}/static/bootstrap-3.3.5-dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<script src="${pageContext.request.contextPath}/static/jQuery/jquery-3.0.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/jQuery/confirm.js"></script>
+</head>
 </head>
 
 <body>
@@ -40,64 +47,18 @@
 			</tr>
 			<tr>
 				<td>
-					<table border="0" width="100%" style="text-align: center;height: 400px;font-size: 20px">
-						<tr height="20%" style="background-color: #F9F0F0">
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/a1.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/a2.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/a3.txt"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/a4.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/a1.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-						</tr>
-						<tr height="5%" style="background-color: #F9F0F0">
-							<td width="20%">上帝的意图</td>
-							<td width="20%">传道培训手册</td>
-							<td width="20%">祷告要这样做</td>
-							<td width="20%">数据库</td>
-							<td width="20%">计算机科学与技术</td>
-						</tr>
-						<tr height="20%" style="background-color: #F0F9F0">
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/b1.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/b2.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/b3.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/b4.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/b4.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
+					<table  border="1" width="100%" style="text-align: center;height: 400px;font-size: 20px">
+						<tr id="line1" height="20%" style="background-color: #F9F0F0">
 							
 						</tr>
-						<tr height="5%" style="background-color: #F0F9F0">
-							<td width="20%">计算机导论</td>
-							<td width="20%">时间简史</td>
-							<td width="20%">地球是如何形成的</td>
-							<td width="20%">Java入门基础</td>
-							<td width="20%">为什么有我</td>
-						</tr>
-						<tr height="20%" style="background-color: #F9F9F0">
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/c1.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/c2.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/c3.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/c4.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/c5.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-						</tr>
-						<tr height="5%" style="background-color: #F9F9F0">
-							<td width="20%">人是猴子进化的吗？</td>
-							<td width="20%">天堂在哪里？</td>
-							<td width="20%">化学基础</td>
-							<td width="20%">阿凡达</td>
-							<td width="20%">环球时事</td>
-						</tr>
-						<tr height="20%" style="background-color: #F0F9F9">
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/d1.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/d2.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/d3.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/d4.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
-							<td width="20%"><a href="http://yeren108.duapp.com/zy/book/d4.pdf"><img alt="见证" src="${logo}/shuji.png"></a></td>
+						<tr id="line2" height="20%" style="background-color: #F0F9F0">
 							
 						</tr>
-						<tr height="5%" style="background-color: #F0F9F0">
-							<td width="20%">ajax</td>
-							<td width="20%">世界地图</td>
-							<td width="20%">新华字典</td>
-							<td width="20%">还有什么？</td>
-							<td width="20%">还有谁？</td>
+						<tr id="line3" height="20%" style="background-color: #F0F0F9">
+							
+						</tr>
+						<tr id="line4" height="20%" style="background-color: #F9F9F1">
+							
 						</tr>
 					</table>
 				</td>
@@ -108,3 +69,43 @@
 	<jsp:include page="/view/muban/tail.jsp" flush="true" />
 </body>
 </html>
+
+<script type="text/javascript">
+
+	//初始化页面
+	$(function(){
+		showLink(8,20,"#line1","#line2","#line3","#line4");
+		
+	});
+	
+	
+	function showLink(categoryId,n,line1,line2,line3,line4){
+		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+			for(var i=0;i<data.length;i++){
+				if(i<5){
+					appendLink(data[i].name,data[i].url,line1);
+				}else if(i<10){
+					appendLink(data[i].name,data[i].url,line2);
+				}else if(i<15){
+					appendLink(data[i].name,data[i].url,line3);
+				}else if(i<20){
+					appendLink(data[i].name,data[i].url,line4);
+				}
+			}
+		});
+	}
+	
+	function appendLink(name,url,where){
+		var td=
+				"<td width='20%'  style='text-align: center;'>"+
+					"<div>"+
+						"<a href='http://"+url+"' target='_blank' style='text-align: center;'><img alt='见证' src='${logo}/shuji.png'></a>"+
+					"</div>"+
+					"<div>"+
+						name+
+					"</div>"+
+				"</td>";
+					
+		$(where).append(td);
+	}
+</script>

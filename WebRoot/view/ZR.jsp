@@ -22,7 +22,7 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<link rel="shortcut icon" href="${logo}/ty.ico" type="image/x-icon" /> 
+<link rel="shortcut icon" href="${logo}/ty.ico" type="image/x-icon" />
 <link href="${pageContext.request.contextPath}/static/bootstrap-3.3.5-dist/css/bootstrap.min.css"
 	rel="stylesheet">
 
@@ -39,7 +39,7 @@
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>
 			</tr>
 			<tr>
-				<td><img alt="见证" src="${logo}/jz.png"></td>
+				<td><img alt="见证" src="${logo}/zr.png"></td>
 			</tr>
 			<tr>
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>
@@ -61,7 +61,6 @@
 						</tr>
 					</table>
 				</td>
-				
 			</tr>
 		</table>
 	</div>
@@ -69,12 +68,11 @@
 	<jsp:include page="/view/muban/tail.jsp" flush="true" />
 </body>
 </html>
-
 <script type="text/javascript">
 
 	//初始化页面
 	$(function(){
-		showLink(5,20,"#line1","#line2","#line3","#line4");
+		showLink(3,20,"#line1","#line2","#line3","#line4");
 		
 	});
 	
@@ -99,7 +97,7 @@
 		var td=
 				"<td width='20%'  style='text-align: center;'>"+
 					"<div>"+
-						"<a href='http://"+url+"' target='_blank' style='text-align: center;'><img alt='见证' src='${logo}/wenjian.png'></a>"+
+						"<a href='http://"+url+"' target='_blank' style='text-align: center;'><img alt='见证' src='${logo}/yinpin.png'></a>"+
 					"</div>"+
 					"<div>"+
 						name+

@@ -98,7 +98,7 @@
 							<td>推荐歌曲</td>
 						</tr>
 					</table>
-					<table id="tujiangequ" border="0" height="100%" width="100%" style="text-align: right;font-size: 32px;">
+					<table id="tujiangequ" border="0" height="100%" width="100%" style="text-align: right;font-size: 28px;">
 						
 						
 					</table>
@@ -139,7 +139,7 @@
 							<td>推荐讲道</td>
 						</tr>
 					</table>
-					<table id="tujianjiangdao" border="0" height="100%" width="100%" style="text-align: left;font-size: 32px">
+					<table id="tujianjiangdao" border="0" height="100%" width="100%" style="text-align: left;font-size: 28px">
 						
 						
 					</table>
