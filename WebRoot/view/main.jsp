@@ -92,18 +92,18 @@
 			</tr>
 			<tr>
 
-				<td>
-					<table border="0" height="100%" width="100%" style="text-align: center;font-size: 20px">
+				<td style="width: 30%;">
+					<table border="0" height="100%" width="100%" style="text-align: right;font-size: 40px">
 						<tr>
 							<td>推荐歌曲</td>
 						</tr>
 					</table>
-					<table id="tujiangequ" border="0" height="100%" width="100%" style="text-align: center;font-size: 20px">
+					<table id="tujiangequ" border="0" height="100%" width="100%" style="text-align: right;font-size: 32px;">
 						
 						
 					</table>
 				</td>
-				<td colspan="5" style="height: 300px">
+				<td colspan="5" style="height: 300px;width: 30%;">
 					<table border="0" height="100%" width="100%"
 						style="text-align: center;">
 						<tr>
@@ -115,47 +115,31 @@
 							<td><a
 								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fmx3GY.flv"><img
 									alt="MX3工艺" src="${img}/2.gif" style="border-radius:10px;"></a></td>
-							<td><a
-								href="http://3.3adisk.com/ContentPane.aspx?down=ok&filepath=yeren%2f%d7%ca%d4%b4%2fvideo%2fzainibaozuoqian.flv"><img
-									alt="见证" src="${img}/4.jpg" style="border-radius:10px;"></a></td>
-							<td><img alt="见证" src="${img}/5.jpg"
-								style="border-radius:10px;"></td>
 						</tr>
 						<tr>
 							<td>mx2</td>
 							<td>MX3硬件</td>
 							<td>MX3工艺</td>
-							<td>在你宝座前</td>
-							<td id="">说明5</td>
 						</tr>
 						<tr>
-							<td><img alt="见证" src="${img}/6.jpg"
-								style="border-radius:10px;"></td>
-							<td><img alt="见证" src="${img}/7.gif"
-								style="border-radius:10px;"></td>
-							<td><img alt="见证" src="${img}/8.jpg"
-								style="border-radius:10px;"></td>
-							<td><img alt="见证" src="${img}/9.gif"
-								style="border-radius:10px;"></td>
-							<td><img alt="见证" src="${img}/10.gif"
-								style="border-radius:10px;"></td>
+							<td><img alt="见证" src="${img}/6.jpg" style="border-radius:10px;"></td>
+							<td><img alt="见证" src="${img}/7.gif" style="border-radius:10px;"></td>
+							<td><img alt="见证" src="${img}/8.jpg" style="border-radius:10px;"></td>
 						</tr>
 						<tr>
 							<td>说明6</td>
 							<td>说明7</td>
 							<td>说明8</td>
-							<td>说明9</td>
-							<td>说明10</td>
 						</tr>
 					</table>
 				</td>
-				<td>
-					<table border="0" height="100%" width="100%" style="text-align: center;font-size: 20px">
+				<td style="width: 30%;">
+					<table border="0" height="100%" width="100%" style="text-align: left;font-size: 40px">
 						<tr>
 							<td>推荐讲道</td>
 						</tr>
 					</table>
-					<table id="tujianjiangdao" border="0" height="100%" width="100%" style="text-align: center;font-size: 20px">
+					<table id="tujianjiangdao" border="0" height="100%" width="100%" style="text-align: left;font-size: 32px">
 						
 						
 					</table>
@@ -172,15 +156,15 @@
 
 	//初始化页面
 	$(function(){
-		showLink(11,4,"#tujiangequ");
-		showLink(3,4,"#tujianjiangdao");
+		showLink(24,5,"#tujiangequ");
+		showLink(23,5,"#tujianjiangdao");
 		gaozhi(10,5,"#gaozhi");
 		appendArticle();
 	});
 	
 	
 	function showLink(categoryId,n,where){
-		$.getJSON("http://192.168.1.105:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/link?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
 			for(var i=0;i<data.length;i++){
 				appendLink(data[i].name,data[i].url,where);
 			}
@@ -191,14 +175,14 @@
 		var tr=
 			"<tr>"+
 				"<td>"+
-					"<a href='"+url+"' target='_blank'>"+name+"</a>"+
+					"<a href='"+url+"' target='_blank' style='background-color: #F0F9F0'>"+name+"</a>"+
 				"<td>"+
 			"</tr>";
 		$(where).append(tr);
 	}
 	
 	function gaozhi(categoryId,n,where){
-		$.getJSON("http://192.168.1.105:9090/yeren-cms/choose/article?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
+		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/article?categoryId="+categoryId+"&n="+n+"&jsonpCallback=?",function(data){ 
 			for(var i=0;i<data.length;i++){
 				if(i==2){
 					appendArticleWithPicture(data[i].id,data[i].name,where);
@@ -247,7 +231,7 @@
 	}
 	
 	function aaa(articleId){
-		$.getJSON("http://192.168.1.105:9090/yeren-cms/choose/articleMore?articleId="+articleId+"&jsonpCallback=?",function(data){ 
+		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/articleMore?articleId="+articleId+"&jsonpCallback=?",function(data){ 
 			sessionStorage.removeItem("what");
 			sessionStorage.setItem("what", data[0][0].data);
 			sessionStorage.removeItem("img");
@@ -264,7 +248,7 @@
 	/* 备用格式 */
 	/*
 		function ABC(){
-		$.getJSON("http://192.168.1.105:9090/yeren-cms/choose/article?jsonpCallback=?",{categoryId:10,n:5},function(data){ 
+		$.getJSON("http://10.10.10.126:9090/yeren-cms/choose/article?jsonpCallback=?",{categoryId:10,n:5},function(data){ 
 			for(var i=0;i<data.length;i++){
 				showXYZ(data[i].name);
 			}
