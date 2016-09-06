@@ -4,8 +4,8 @@
 
 	<groupId>com.yeren</groupId>
 	<artifactId>yeren-ty-website</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>v1.0</version>
+	<packaging>war</packaging>
 
 	<name>yeren-ty-website</name>
 	<url>http://maven.apache.org</url>
