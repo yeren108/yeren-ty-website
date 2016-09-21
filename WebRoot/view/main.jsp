@@ -40,7 +40,7 @@
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>
 			</tr>
 			<tr style="text-align: center;">
-				<td colspan="7">
+				<td colspan="7" style="padding-top: 15px;">
 					<table align="center" border="0" width="100%">
 						<tr align="center">
 							<td><a href="view/ZR.jsp"><img alt="见证"
@@ -85,7 +85,7 @@
 			</tr>
 			<tr>
 				<td colspan="7" style="text-align: center;height: 50px;"><span
-					style="font-size: 50px;color: #fff;border: 2px;background-color: #632443;width: 100%;border-radius:10px;border-color: #fff;">资源下载</span></td>
+					style="font-size: 50px;color: #fff;border: 2px;background-color: #632443;width: 100%;border-radius:10px;border-color: #fff;">推荐资源</span></td>
 			</tr>
 			<tr>
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>

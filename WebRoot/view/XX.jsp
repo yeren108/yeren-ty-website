@@ -33,7 +33,7 @@
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>
 			</tr>
 			<tr>
-				<td><img alt="见证" src="${logo}/xx.png"></td>
+				<td style="padding: 15px;"><a href="${pageContext.request.contextPath}/view/main.jsp" ><img alt="见证" src="${logo}/xx.png"></a></td>
 			</tr>
 			<tr>
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>

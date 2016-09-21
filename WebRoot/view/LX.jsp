@@ -33,7 +33,7 @@
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>
 			</tr>
 			<tr>
-				<td><img alt="见证" src="${logo}/lx.png"></td>
+				<td style="padding: 15px;"><a href="${pageContext.request.contextPath}/view/main.jsp" ><img alt="见证" src="${logo}/lx.png"></a></td>
 			</tr>
 			<tr>
 				<td colspan="7" style="background-color: #632443;height: 10px"></td>
@@ -43,7 +43,7 @@
 					<table border="0" width="100%" height="500px">
 						<tr>
 							<td width="33%">
-								<table border="0" width="100%" height="100%" style="font-size: 30px" title="ff">
+								<table border="0" width="100%" height="100%" style="font-size: 30px">
 									<tr>
 										<td colspan="2" align="center" width="">教会</td>
 									</tr>
@@ -52,8 +52,8 @@
 										<td align="left" width="70%">上海天意庇哩亚教会</td>
 									</tr>
 									<tr>
-										<td align="right">主张：</td>
-										<td align="left">信仰回归圣经</td>
+										<td align="right">口号：</td>
+										<td align="left">我灵魂啊你要祷告</td>
 									</tr>
 									<tr>
 										<td align="right">时间：</td>
@@ -61,7 +61,7 @@
 									</tr>
 									<tr>
 										<td align="right">地点：</td>
-										<td align="left" style="font-size: 15px;">顾村公园(绿地缤纷城)<br>汉中路一天下（主）</td>
+										<td align="left"">汉中路一天下大厦</td>
 									</tr>
 									<tr>
 										<td align="right">Q 群：</td>
@@ -70,7 +70,7 @@
 								</table>
 							</td>
 							<td width="34%">
-								<table border="0" width="100%" height="100%" style="font-size: 30px" title="ff">
+								<table border="0" width="100%" height="100%" style="font-size: 30px">
 									<tr>
 										<td colspan="2" align="center" width="">牧者</td>
 									</tr>
@@ -97,25 +97,25 @@
 								</table>
 							</td>
 							<td width="33%">
-								<table border="0" width="100%" height="100%" style="font-size: 30px" title="ff">
+								<table border="0" width="100%" height="100%" style="font-size: 30px">
 									<tr>
 										<td colspan="2" align="center" width="">聚会方式</td>
 									</tr>
 									<tr>
 										<td align="right" width="50%">周日：</td>
-										<td align="left" width="50%" style="font-size: 15px">礼拜（上午9-12）</td>
+										<td align="left" width="50%" style="font-size: 15px">礼拜（上午9:00-11:30）</td>
 									</tr>
 									<tr>
-										<td align="right">周三：</td>
-										<td align="left" style="font-size: 15px">礼拜（下午17-19）</td>
+										<td align="right">周五：</td>
+										<td align="left" style="font-size: 15px">晚祷（下午19:00-？）</td>
 									</tr>
 									<tr>
 										<td align="right">周六：</td>
-										<td align="left" style="font-size: 15px">初信学习（下午14-16）</td>
+										<td align="left" style="font-size: 15px">初信学习（下午14:00-16:00）</td>
 									</tr>
 									<tr>
-										<td align="right">其他：</td>
-										<td align="left" style="font-size: 15px">暂定</td>
+										<td align="right">公众号：</td>
+										<td align="left" style="font-size: 15px">微信搜索->上海天意庇哩亚教会</td>
 									</tr>
 									<tr>
 										<td align="right">其他：</td>
