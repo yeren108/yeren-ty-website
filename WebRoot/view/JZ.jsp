@@ -26,7 +26,7 @@
 </head>
 
 <body>
-	<jsp:include page="/view/muban/head.jsp" flush="true" />
+	<jsp:include page="${pageContext.request.contextPath}/view/muban/head.jsp" flush="true" />
 	<div id="body" style="width: 100%;text-align: center;background-color: #F0F0F0;">
 		<table border="0" width="100%" style="text-align: center;">
 			<tr>
@@ -105,6 +105,6 @@
 		</table>
 	</div>
 	
-	<jsp:include page="/view/muban/tail.jsp" flush="true" />
+	<jsp:include page="${pageContext.request.contextPath}/view/muban/tail.jsp" flush="true" />
 </body>
 </html>

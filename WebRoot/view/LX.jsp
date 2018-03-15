@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@ include file="/view/include/taglib.jsp"%>
+<%@ include file="${pageContext.request.contextPath}/view/include/taglib.jsp"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -131,6 +131,6 @@
 		</table>
 	</div>
 	
-	<jsp:include page="/view/muban/tail.jsp" flush="true" />
+	<jsp:include page="${pageContext.request.contextPath}/view/muban/tail.jsp" flush="true" />
 </body>
 </html>
