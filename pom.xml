@@ -54,17 +54,4 @@
 		    </plugin>  
 		</plugins> 
 	</build>
-	<distributionManagement>
-		<repository>
-        	<id>user-release</id>
-        	<name>user release resp</name>
-        	<!-- <url>http://localhost:8080/nexus/content/repositories/user-release/</url> -->
-        	<url>http://139.199.124.81:8080/</url>
-    	</repository>
-	    <snapshotRepository>
-	        <id>user-snapshot</id>
-	        <name>user snapshot</name>
-	        <url>http://139.199.124.81:8081/</url>
-	    </snapshotRepository>
-	</distributionManagement>
 </project>
